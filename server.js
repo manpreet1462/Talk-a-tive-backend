@@ -20,8 +20,7 @@ app.use(express.json()); // to accept JSON data
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
-      "https://talk-a-tive-backend-5lfo.onrender.com", // replace this with your deployed frontend if needed
+      "https://talk-a-tive-backend-5lfo.onrender.com",
     ],
     credentials: true,
   })
