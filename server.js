@@ -17,14 +17,7 @@ const app = express();
 app.use(express.json()); // to accept JSON data
 
 // ✅ Enable CORS for both local and deployed frontend
-app.use(
-  cors({
-    origin: [
-      "https://talk-a-tive-backend-5lfo.onrender.com",
-    ],
-    credentials: true,
-  })
-);
+app.use(cors()); // Allows all origins
 
 // Routes
 app.use("/api/user", userRoutes);
